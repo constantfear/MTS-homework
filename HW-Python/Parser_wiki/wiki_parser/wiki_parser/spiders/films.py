@@ -50,7 +50,7 @@ class FilmsSpider(scrapy.Spider):
         item['rating'] = None
 
         raiting_link = response.css('tr:contains("IMDb") span a::attr(href)').get()
-        time.sleep(2)
+
         if raiting_link:
             yield scrapy.Request(raiting_link, callback=self.parse_rating, meta={'item': item})
         else:
