@@ -9,6 +9,7 @@
 - [**Теория вероятности и Математическая статистика**](./HW-Math/Prob_theory)
 - [**Оптимизация**](./HW-Math/Optimization)
 - [**Введение в регрессию**](./HW-Math/Regression)
+- [**EDA и визуализация**](./HW-Math/Regression)
 
 
 ### Python
