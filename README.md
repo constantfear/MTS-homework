@@ -10,6 +10,7 @@
 - [**Оптимизация**](./HW-Math/Optimization)
 - [**Введение в регрессию**](./HW-Math/Regression)
 - [**EDA и визуализация**](./HW-Math/Regression)
+- [**Итоговая работа по Математике**](./HW-Math/Final_homework/)
 
 
 ### Python
