@@ -16,3 +16,8 @@
 ### Python
 - [**Парсер фильмов с Wikipedia**](./HW-Python/Parser_wiki)
 - [**REST API на FastAPI**](https://github.com/constantfear/fastapi_project)
+
+
+### Machine Learning
+- [**Соревнование №1**](./HW-ML/Compet_1/)
+- [**Gradient Boosting**](./HW-ML/HW-2/)
