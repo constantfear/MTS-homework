@@ -21,3 +21,4 @@
 ### Machine Learning
 - [**Соревнование №1**](./HW-ML/Compet_1/)
 - [**Gradient Boosting**](./HW-ML/HW-2/)
+- [**Кластеризация и Понижение размерности**](./HW-ML/HW-3/)
