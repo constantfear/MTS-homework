@@ -25,3 +25,6 @@
 - [**Временные ряды**](./HW-ML/HW-4/)
 - [**AB-тесты**](./HW-ML/AB-tests/)
 - [**Итоговая работа по ML**](./HW-ML//ml-final/)
+
+### BigData
+- [**ML Ops**](https://github.com/constantfear/ml-ops-simple-project)
