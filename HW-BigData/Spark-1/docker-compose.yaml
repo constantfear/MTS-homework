@@ -1,0 +1,63 @@
+services:
+  namenode:
+    networks:
+      - spark_mts
+    build: .
+    hostname: namenode
+    command:  ["hdfs", "namenode"]
+    ports:
+      - 9870:9870
+    env_file:
+      - ./config
+    volumes:
+    # - тут нужно указать путь до удобной вам папки на винде/линуксе
+    # куда будете складывать файлы для работы с hadoop
+      - ./map-reduce/namenode_files:/volume
+    environment:
+        ENSURE_NAMENODE_DIR: "/tmp/hadoop-root/dfs/name"
+        
+  datanode1:
+    networks:
+      - spark_mts
+    ports:
+      - 8888:8888
+    build: .
+    command: ["hdfs", "datanode"]
+    env_file:
+      - ./config
+    volumes:
+    # также этот путь нужно сменить на соотв. в вашей файловой системе, чтоб датанода туда креды складывала
+      -  ./map-reduce/datanode-data-1:/volume
+      
+  datanode2:
+    networks:
+      - spark_mts
+    build: .
+    command: ["hdfs", "datanode"]
+    env_file:
+      - ./config
+    volumes:
+    # также этот путь нужно сменить на соотв. в вашей файловой системе, чтоб датанода туда креды складывала
+      -  ./map-reduce/datanode-data-2:/volume
+
+  resourcemanager:
+    networks:
+      - spark_mts
+    build: .
+    hostname: resourcemanager
+    command: ["yarn", "resourcemanager"]
+    ports:
+       - 8088:8088
+    env_file:
+      - ./config
+
+  nodemanager:
+    networks:
+      - spark_mts
+    build: .
+    command: ["yarn", "nodemanager"]
+    env_file:
+      - ./config
+
+networks:
+  spark_mts:
