@@ -30,3 +30,10 @@
 - [**ML Ops**](https://github.com/constantfear/ml-ops-simple-project)
 - [**Spark-1**](./HW-BigData/Spark-1/)
 - [**Spark-2**](./HW-BigData/Spark-2/)
+<!-- - [**Итоговая работа по Spark**](./HW-BigData/Spark-final/) -->
+
+### Neural-Network
+- [**NN-competition-1** (CV)](./HW-NN/compet1/)
+- [**NN-competition-2** (NLP)](./HW-NN/compet2/)
+- [**NN-HW-3**](./HW-NN/HW-3/NN_HW_3.ipynb)
+- [**NN-HW-4**](./HW-NN/HW-4/NN_HW_4.ipynb)
